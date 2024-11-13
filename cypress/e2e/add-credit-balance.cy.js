@@ -1,4 +1,3 @@
-import CONSTANTS from '/cypress/support/constants.json'
 
 describe('Adjustments (+) Add Credit', () => {
 
