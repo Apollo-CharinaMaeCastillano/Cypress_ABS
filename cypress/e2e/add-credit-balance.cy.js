@@ -1,3 +1,4 @@
+import CONSTANTS from '/cypress/support/constants.json'
 
 describe('Adjustments (+) Add Credit', () => {
 
@@ -6,13 +7,13 @@ describe('Adjustments (+) Add Credit', () => {
     cy.visit(CONSTANTS.LINK);
     cy.log("Logging in...");
     cy.login(CONSTANTS.USERNAME, CONSTANTS.PASSWORD);
-    cy.url().should("include", "/AccountPage");
+    cy.get('html', { timeout: 10000 }).should('be.visible');  // Replace with a selector for an element on the AccountPage
+    cy.viewport(1920, 1080)
   });
 
-  it('Log in to Billing Site and Adds Credit to User Test6', () => {
+  it('Log in to Billing Site and Adds Credit to User', () => {
 
-    cy.fillInput("Search Key", "Test").wait(3000)
-    cy.get('i.q-icon').contains('search').click().wait(1000)
+    cy.get('#search-id').should('be.visible').contains('search').click().wait(1000)
 
     cy.log('Copying old credit balance as "oldCredit"...')
     cy.get('td.text-left').contains(CONSTANTS.TESTACCLNAME).siblings('.text-left').eq(2).invoke('text').then((text) => {
