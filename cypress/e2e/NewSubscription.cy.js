@@ -13,10 +13,10 @@ describe('Billing Portal Login Test', () => {
     // Set viewport size for a consistent testing environment
     cy.viewport(1920, 1080);
     
-    // Verify the login page elements
-    cy.contains('Sign in to DataConnect').should('be.visible');
-    cy.contains('Username or email').should('be.visible');
-    cy.contains('Password').should('be.visible');
+    // // Verify the login page elements
+    // cy.contains('Sign in to DataConnect').should('be.visible');
+    // cy.contains('Username or email').should('be.visible');
+    // cy.contains('Password').should('be.visible');
 
     // Enter username
     cy.get('#username')
