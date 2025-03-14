@@ -1,0 +1,5 @@
+Account Number,Enter Amount,Item Description,Date,Payment Method,OR Number
+RES-202007-3022,1000,Electricity Bill,2025-03-14,Credit Card,OR-123456
+RES-202005-2834,1000,Water Bill,2025-03-14,Cash,OR-654321
+SME-201901-25,0,Internet Bill,2025-03-14,Bank Transfer,OR-987654
+RES-202007-3023,0,Miscellaneous,2025-03-14,GCash,OR-135790
